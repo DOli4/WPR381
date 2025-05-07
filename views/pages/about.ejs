@@ -1,1 +1,16 @@
+<%- include('../partials/header') %>
+
 <h1>About Us</h1>
+<p>Meet the team that built this portal:</p>
+
+<ul>
+  <% if (team && team.length) { %>
+    <% team.forEach(member => { %>
+      <li><strong><%= member.name %></strong> – <%= member.role %></li>
+    <% }) %>
+  <% } else { %>
+    <li>No team data available.</li>
+  <% } %>
+</ul>
+
+<%- include('../partials/footer') %>
