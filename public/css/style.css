@@ -16,6 +16,7 @@ html body{
   background-attachment: fixed;
   color: black;
 }
+
 #background {
   margin: 0;
   padding-top: 5%;
@@ -131,8 +132,6 @@ html body{
 
 body {
   font-family: 'Inter', sans-serif;
-  background: url('/images/home.jpg') no-repeat center center fixed;
-  background-size: cover;
   margin: 0;
   padding: 0;
   color: #222;
@@ -147,10 +146,13 @@ body {
   gap: 60px;
 }
 
-.white-glass {
+/* GLASS STYLES */
+.introglass,
+.highlightglass,
+.eventglass,
+.quoteglass {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   border-radius: 18px;
   padding: 50px;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
@@ -158,12 +160,16 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.white-glass:hover {
+.introglass:hover,
+.highlightglass:hover,
+.eventglass:hover,
+.quoteglass:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
-.hero-title {
+/* TITLES & TEXT */
+.main-title {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   text-align: center;
@@ -171,7 +177,7 @@ body {
   color: #1a1a1a;
 }
 
-.hero-subtitle {
+.subtitle {
   font-size: 1.3rem;
   text-align: center;
   color: #444;
@@ -186,6 +192,7 @@ body {
   color: #2a2a2a;
 }
 
+/* SECTION TITLES */
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
@@ -205,6 +212,7 @@ body {
   border-radius: 4px;
 }
 
+/* HIGHLIGHT LIST */
 .highlight-list {
   list-style: none;
   padding: 0;
@@ -231,7 +239,25 @@ body {
   border-radius: 50%;
 }
 
-.quote-banner blockquote {
+/* EVENT LIST */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.event-list li {
+  font-size: 1.05rem;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-left: 5px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* QUOTE SECTION */
+.quoteglass blockquote {
   font-size: 1.25rem;
   font-style: italic;
   color: #333;
@@ -241,14 +267,13 @@ body {
   line-height: 1.7;
 }
 
-.quote-banner span {
+.quoteglass span {
   display: block;
   margin-top: 18px;
   font-weight: 600;
   font-size: 1rem;
   color: #777;
 }
-
 
 /*-----------------events------------------------------------*/
 :root {
