@@ -1,6 +1,19 @@
-<%- include('../partials/header') %>
+<%- include('../partials/headerContact') %>
 
-<h1>Thank You!</h1>
-<p>Your message has been received. We will be in touch soon.</p>
+<div class="home-wrapper">
+  <section class="contactglass">
+    <h2 class="section-title">Thank You, <%= userMessage.name %>!</h2>
+    <p class="subtitle">We’ve received your message:</p>
+
+    <div class="contact-summary">
+      <p><strong>Email:</strong> <%= userMessage.email %></p>
+      <p><strong>Message:</strong></p>
+      <blockquote><%= userMessage.message %></blockquote>
+    </div>
+
+    <a href="/" class="button-link">Return to Home</a>
+  </section>
+</div>
 
 <%- include('../partials/footer') %>
+

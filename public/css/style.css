@@ -5,6 +5,18 @@ html body{
   box-sizing: border-box;
 }
 
+#aboutbackground{
+    margin: 0;
+  padding-top: 5%;
+  font-family: Arial, sans-serif;
+  background-image: url('/images/about2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+}
+
 #homebackground {
   margin: 0;
   padding-top: 5%;
@@ -16,6 +28,19 @@ html body{
   background-attachment: fixed;
   color: black;
 }
+
+#contactbackground {
+  margin: 0;
+  padding-top: 5%;
+  font-family: Arial, sans-serif;
+  background-image: url('/images/contact.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+}
+
 
 #background {
   margin: 0;
@@ -98,7 +123,7 @@ html body{
   -webkit-backdrop-filter: blur(12px);
   font-family: 'Segoe UI', sans-serif;
   font-size: 0.9rem;
-  color: #555;
+  color: #e4e4e4;
 }
 
 .footersocials {
@@ -275,7 +300,133 @@ body {
   color: #777;
 }
 
-/*-----------------events------------------------------------*/
+/*-----------About----------------------------------------------------------------*/
+
+.aboutglass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 18px;
+  padding: 50px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutglass:hover {
+  transform: translateY(-4px);
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.team-list li {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-left: 5px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.team-list .role {
+  color: #555;
+  font-style: italic;
+}
+
+/*-----------------events----------------------------------------------------*/
+
+        /*-------------------tOP-------------------------------*/
+.homewrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flexbox;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Event Section Wrapper */
+.eventwrapper {
+  max-width: 40%;
+  margin: auto;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 2% 5% 2% 5%;
+  border-radius: 18px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Section Title */
+.eventtitle {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.eventtitle::after {
+  content: "";
+  display: block;
+  margin: 12px auto 0;
+  width: 70px;
+  height: 4px;
+  background: #d4af37;
+  border-radius: 2px;
+}
+
+/* Empty Message */
+.eventempty {
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 5px solid #d4af37;
+  border-radius: 10px;
+  padding: 16px 24px;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Event Cards */
+.eventlist {
+  display: flexbox;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.eventbox {
+  background: white;
+  margin: 10%;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.eventbox:hover {
+  transform: translateY(-4px);
+}
+
+.eventbox h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.eventbox p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  color: #444;
+}
+
+        /*-------------------bottom----------------------------*/
+
 :root {
   --gold-accent: #c8a96a;
   --gold-highlight: #e0c28a;
@@ -400,3 +551,82 @@ body {
   font-weight: 600;
 }
 
+/*-------------contact--------------------------------------------------------------*/
+.contactglass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 50px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #2f4e85;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #476ba4;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2f4e85;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button-link:hover {
+  background: #476ba4;
+}
+/*------thank you --------------------------------------------------------------------------*/
+.contact-summary {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-summary blockquote {
+  margin: 10px 0;
+  padding-left: 16px;
+  border-left: 4px solid #d4af37;
+  color: #333;
+  font-style: italic;
+  line-height: 1.6;
+}
