@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-// ====== Data ======
+//Data
 const team = [
   { name: "Dieter", role: "Team Lead" },
   { name: "Dieter", role: "Frontend Developer" },
@@ -11,12 +11,38 @@ const team = [
 ];
 
 const events = [
-  { title: "Park Cleanup", date: "2025-05-10", location: "Greenfield Park", image: "/images/cleanup.jpg" },
-  { title: "Community Braai", date: "2025-05-20", location: "Eastlynn Hall", image: "/images/braai.jpg" },
-  { title: "Art Show: Bloom & Form", date: "2025-06-10", location: "Gallery 21, Cape Town", image: "/images/art1.png" },
-  { title: "Modern Expressions", date: "2025-06-18", location: "Sandton Art Hall", image: "/images/art2.png" },
-  { title: "Pastel Dreams Exhibition", date: "2025-07-01", location: "Online / Virtual", image: "/images/art3.png" }
+  {
+    title: "Spring Semester Welcome Brunch",
+    date: "2025-05-15",
+    location: "Main Courtyard, LeGastronome Campus",
+    image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    title: "Pastry Arts Final Showcase",
+    date: "2025-06-03",
+    location: "Pastry Studio, Building B",
+    image: "https://www.austculinary.com.au/wp-content/uploads/2024/07/Chef-competition.png"
+  },
+  {
+    title: "Farm-to-Table Market Visit",
+    date: "2025-06-12",
+    location: "Local Organic Market, Foodville",
+    image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFybWVyJTIwbWFya2V0fGVufDB8fDB8fHww"
+  },
+  {
+    title: "Global Cuisine Night",
+    date: "2025-06-24",
+    location: "Culinary Theater, South Wing",
+    image: "https://images.unsplash.com/photo-1626473401858-88660257030a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    title: "Graduation Gala Dinner",
+    date: "2025-07-05",
+    location: "Grand Ballroom, LeGastronome",
+    image: "https://images.unsplash.com/photo-1562050344-f7ad946cee35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
 ];
+
 
 const courses = [
   {
@@ -63,7 +89,7 @@ const courses = [
   }
 ];
 
-// ====== Routes ======
+//Routes
 
 // Home
 router.get('/', (req, res) => {

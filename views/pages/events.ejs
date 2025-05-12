@@ -3,7 +3,7 @@
 <div class="home-wrapper">
 
   <!-- EVENTS SECTION -->
-   <h2 class="eventtitle">Events</h2>
+  <h2 class="eventtitle">Events</h2>
   <section class="eventwrapper">
     <% if (events.length === 0) { %>
       <div class="event-empty">No events posted yet.</div>
@@ -11,6 +11,7 @@
       <div class="eventlist">
         <% events.forEach(event => { %>
           <div class="eventbox">
+            <img src="<%= event.image %>" alt="<%= event.title %>" class="event-image" />
             <h3><%= event.title %></h3>
             <p><strong>Date:</strong> <%= event.date %></p>
             <p><strong>Location:</strong> <%= event.location %></p>
