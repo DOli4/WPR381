@@ -15,31 +15,31 @@ const events = [
     title: "Spring Semester Welcome Brunch",
     date: "2025-05-15",
     location: "Main Courtyard, LeGastronome Campus",
-    image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/vaughn1.jpg"
   },
   {
     title: "Pastry Arts Final Showcase",
     date: "2025-06-03",
     location: "Pastry Studio, Building B",
-    image: "https://www.austculinary.com.au/wp-content/uploads/2024/07/Chef-competition.png"
+    image: "/images/vaughn2.png"
   },
   {
     title: "Farm-to-Table Market Visit",
     date: "2025-06-12",
     location: "Local Organic Market, Foodville",
-    image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFybWVyJTIwbWFya2V0fGVufDB8fDB8fHww"
+    image: "/images/vaughn3.jpg"
   },
   {
     title: "Global Cuisine Night",
     date: "2025-06-24",
     location: "Culinary Theater, South Wing",
-    image: "https://images.unsplash.com/photo-1626473401858-88660257030a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/vaughn4.jpg"
   },
   {
     title: "Graduation Gala Dinner",
     date: "2025-07-05",
     location: "Grand Ballroom, LeGastronome",
-    image: "https://images.unsplash.com/photo-1562050344-f7ad946cee35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/images/vaughn5.jpg"
   }
 ];
 
