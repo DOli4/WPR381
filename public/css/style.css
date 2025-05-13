@@ -338,106 +338,106 @@ body {
 
 /*-----------------events----------------------------------------------------*/
 
-        /*-------------------tOP-------------------------------*/
-        .homewrapper {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 60px 30px;
-          display: flex;
-          flex-direction: column;
-          gap: 60px;
-        }
+/*-------------------tOP-------------------------------*/
+.homewrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
         
-        /* Event Section Wrapper */
-        .eventwrapper {
-          max-width: 800px;
-          margin: auto;
-          background: rgba(255, 255, 255, 0.75);
-          padding: 2% 5%;
-          border-radius: 18px;
-          backdrop-filter: blur(16px);
-          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-        }
-        
-        /* Section Title */
-        .eventtitle {
-          text-align: center;
-          font-family: 'Playfair Display', serif;
-          font-size: 2.6rem;
-          color: #1a1a1a;
-          margin-bottom: 40px;
-          position: relative;
-        }
-        
-        .eventtitle::after {
-          content: "";
-          display: block;
-          margin: 12px auto 0;
-          width: 70px;
-          height: 4px;
-          background: #d4af37;
-          border-radius: 2px;
-        }
-        
-        /* Empty Message */
-        .eventempty {
-          background: rgba(255, 255, 255, 0.9);
-          border-left: 5px solid #d4af37;
-          border-radius: 10px;
-          padding: 16px 24px;
-          font-style: italic;
-          font-size: 1.1rem;
-          color: #444;
-          max-width: 600px;
-          margin: 0 auto;
-        }
-        
-        /* Event List Grid */
-        .eventlist {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-          gap: 24px;
-        }
-        
-        /* Event Card */
-        .eventbox {
-          background: white;
-          border-radius: 14px;
-          padding: 20px;
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-          transition: transform 0.2s ease;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        
-        .eventbox:hover {
-          transform: translateY(-4px);
-        }
-        
-        .eventbox img.event-image {
-          width: 100%;
-          max-height: 180px;
-          object-fit: cover;
-          border-radius: 10px;
-          margin-bottom: 12px;
-        }
-        
-        .eventbox h3 {
-          font-size: 1.2rem;
-          margin-bottom: 10px;
-          color: #1a1a1a;
-          text-align: center;
-        }
-        
-        .eventbox p {
-          font-size: 0.95rem;
-          margin: 4px 0;
-          color: #444;
-          text-align: center;
-        }        
+/* Event Section Wrapper */
+.eventwrapper {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 2% 5%;
+  border-radius: 18px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
 
-        /*-------------------bottom----------------------------*/
+/* Section Title */
+.eventtitle {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.eventtitle::after {
+  content: "";
+  display: block;
+  margin: 12px auto 0;
+  width: 70px;
+  height: 4px;
+  background: #d4af37;
+  border-radius: 2px;
+}
+
+/* Empty Message */
+.eventempty {
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 5px solid #d4af37;
+  border-radius: 10px;
+  padding: 16px 24px;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Event List Grid */
+.eventlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Event Card */
+.eventbox {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eventbox:hover {
+  transform: translateY(-4px);
+}
+
+.eventbox img.event-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.eventbox h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.eventbox p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  color: #444;
+  text-align: center;
+}        
+
+/*-------------------bottom----------------------------*/
 
 :root {
   --gold-accent: #c8a96a;
@@ -466,7 +466,6 @@ body {
   opacity: 0;
 }
 
-/* Animate each course with delay */
 .course:nth-child(1) { animation-delay: 0.1s; }
 .course:nth-child(2) { animation-delay: 0.3s; }
 .course:nth-child(3) { animation-delay: 0.5s; }
@@ -564,6 +563,7 @@ body {
 }
 
 /*-------------contact--------------------------------------------------------------*/
+
 .contactglass {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(14px);
@@ -625,7 +625,9 @@ body {
 .button-link:hover {
   background: #476ba4;
 }
+
 /*------thank you --------------------------------------------------------------------------*/
+
 .contact-summary {
   background: rgba(255, 255, 255, 0.6);
   padding: 20px;
