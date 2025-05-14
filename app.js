@@ -19,6 +19,7 @@ app.set("views", path.join(__dirname, "views"));
 //Use routes
 app.use("/", pageRoutes);
 
+//Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
