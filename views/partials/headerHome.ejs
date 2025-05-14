@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Community Portal</title>
-  <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Portal</title>
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
-  <div id = "homebackground">
-  <div id="header">
-    <nav class="navbar">
-      <ul class="navlist">
-        <li class="navitem <%= page === 'home' ? 'active' : '' %>" id="homebt"><a href="/">Home</a></li>
-        <li class="navitem <%= page === 'about' ? 'active' : '' %>"><a href="/about">About</a></li>
-        <li class="navitem <%= page === 'events' ? 'active' : '' %>"><a href="/events">Events</a></li>
-        <li class="navitem <%= page === 'contact' ? 'active' : '' %>" id="contactbt"><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+    <div id="homebackground">
+        <!-- Part of the floating header -->
+        <div id="header">
+            <nav class="navbar">
+                <ul class="navlist">
+                    <li class="navitem <%= page === 'home' ? 'active' : '' %>" id="homebt"><a href="/">Home</a></li>
+                    <li class="navitem <%= page === 'about' ? 'active' : '' %>"><a href="/about">About</a></li>
+                    <li class="navitem <%= page === 'events' ? 'active' : '' %>"><a href="/events">Events</a></li>
+                    <li class="navitem <%= page === 'contact' ? 'active' : '' %>" id="contactbt"><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
