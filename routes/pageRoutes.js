@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // ====== Data ======
+// Team members and their roles
 const team = [
   { name: "Dieter", role: "Team Lead" },
   { name: "Dieter", role: "Frontend Developer" },
@@ -9,7 +10,7 @@ const team = [
   { name: "Magotso", role: "Data Manager" },
   { name: "Mogau", role: "Documentation Manager" }
 ];
-
+// Community events
 const events = [
   { title: "Park Cleanup", date: "2025-05-10", location: "Greenfield Park", image: "/images/cleanup.jpg" },
   { title: "Community Braai", date: "2025-05-20", location: "Eastlynn Hall", image: "/images/braai.jpg" },
@@ -17,7 +18,7 @@ const events = [
   { title: "Modern Expressions", date: "2025-06-18", location: "Sandton Art Hall", image: "/images/art2.png" },
   { title: "Pastel Dreams Exhibition", date: "2025-07-01", location: "Online / Virtual", image: "/images/art3.png" }
 ];
-
+// Course offerings with detailed descriptions
 const courses = [
   {
     title: "Croissant Baking Workshop",
@@ -65,28 +66,28 @@ const courses = [
 
 // ====== Routes ======
 
-// Home
+// Home page route
 router.get('/', (req, res) => {
   res.render('pages/home', { page: 'home' });
 });
 
-// About
+// About page with team info
 router.get('/about', (req, res) => {
   res.render('pages/about', { team, page: 'about' });
 });
 
-// Events
+// Events page 
 router.get('/events', (req, res) => {
   res.render('pages/events', { events, courses, page: 'events' });
 });
 
-// Contact (GET)
+// Contact form routes
 const messages = [];
 
 router.get('/contact', (req, res) => {
   res.render('pages/contact', { page: 'contact' });
 });
-
+// POST contact form submission
 router.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
 
@@ -97,9 +98,10 @@ router.post('/contact', (req, res) => {
     // Pass the latest message to the thank you page
     res.render('pages/thankyou', { userMessage: entry, page: 'thankyou' });
   } else {
+    // Redirect back if any field is missing
     res.redirect('/contact');
   }
 });
 
 
-module.exports = router;
+module.exports = router(); // Export router to be used in main app
