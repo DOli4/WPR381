@@ -104,4 +104,4 @@ router.post('/contact', (req, res) => {
 });
 
 
-module.exports = router(); // Export router to be used in main app
+module.exports = router; // Export router to be used in main app
