@@ -1,3 +1,6 @@
+# Github link
+https://github.com/DOli4/WPR381
+
 # Community Portal – LeGastronome College
 
 A responsive and structured Node.js + Express + EJS web application designed as a community portal for culinary arts students and faculty. This project serves as both a learning resource and an interactive platform for event engagement, institutional information, and public communication.
