@@ -1,52 +1,66 @@
 <%- include('../partials/header') %>
 
-<div class="home-wrapper">
+    <div class="home-wrapper">
 
-  <!-- EVENTS SECTION -->
-  <h2 class="eventtitle">Events</h2>
-  <section class="eventwrapper">
-    <% if (events.length === 0) { %>
-      <div class="event-empty">No events posted yet.</div>
-    <% } else { %>
-      <div class="eventlist">
-        <% events.forEach(event => { %>
-          <div class="eventbox">
-            <img src="<%= event.image %>" alt="<%= event.title %>" class="event-image" />
-            <h3><%= event.title %></h3>
-            <p><strong>Date:</strong> <%= event.date %></p>
-            <p><strong>Location:</strong> <%= event.location %></p>
-          </div>
-        <% }) %>
-      </div>
-    <% } %>
-  </section>
+        <!-- EVENTS SECTION -->
+        <!-- The events are dynamically created -->
+        <h2 class="eventtitle">Events</h2>
+        <section class="eventwrapper">
+            <% if (events.length === 0) { %>
+                <div class="event-empty">No events posted yet.</div>
+                <% } else { %>
+                    <div class="eventlist">
+                        <% events.forEach(event => { %>
+                            <div class="eventbox">
+                                <img src="<%= event.image %>" alt="<%= event.title %>" class="event-image" />
+                                <h3>
+                                    <%= event.title %>
+                                </h3>
+                                <p><strong>Date:</strong>
+                                    <%= event.date %>
+                                </p>
+                                <p><strong>Location:</strong>
+                                    <%= event.location %>
+                                </p>
+                            </div>
+                            <% }) %>
+                    </div>
+                    <% } %>
+        </section>
 
-  <!-- COURSES SECTION -->
-  <section class="course-section">
-    <h2 class="section-title">Courses & Workshops</h2>
-    <% courses.forEach(course => { %>
-      <div class="course course-flex">
-        <div class="course-image-wrapper">
-          <img src="<%= course.image %>" class="course-image" alt="<%= course.title %>" />
-        </div>     
-        <div class="course-info glass-box">
-          <h3><%= course.title %></h3>
-          <% course.description.forEach(paragraph => { %>
-            <p><%= paragraph %></p>
-          <% }) %>
-          <div class="course-details">
-            <p><strong>Date:</strong> <%= course.details.date %></p>
-            <p><strong>Location:</strong> <%= course.details.location %></p>
-            <p><strong>Price:</strong> <%= course.details.price %></p>
-          </div>
-        </div>
-      </div>
-    <% }) %>
-  </section>
+        <!-- COURSES SECTION -->
+        <section class="course-section">
+            <h2 class="section-title">Courses & Workshops</h2>
+            <% courses.forEach(course => { %>
+                <div class="course course-flex">
+                    <div class="course-image-wrapper">
+                        <img src="<%= course.image %>" class="course-image" alt="<%= course.title %>" />
+                    </div>
+                    <div class="course-info glass-box">
+                        <h3>
+                            <%= course.title %>
+                        </h3>
+                        <% course.description.forEach(paragraph => { %>
+                            <p>
+                                <%= paragraph %>
+                            </p>
+                            <% }) %>
+                                <div class="course-details">
+                                    <p><strong>Date:</strong>
+                                        <%= course.details.date %>
+                                    </p>
+                                    <p><strong>Location:</strong>
+                                        <%= course.details.location %>
+                                    </p>
+                                    <p><strong>Price:</strong>
+                                        <%= course.details.price %>
+                                    </p>
+                                </div>
+                    </div>
+                </div>
+                <% }) %>
+        </section>
 
-</div>
+    </div>
 
-<%- include('../partials/footer') %>
-
-
-
+    <%- include('../partials/footer') %>

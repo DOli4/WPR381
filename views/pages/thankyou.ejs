@@ -1,19 +1,24 @@
 <%- include('../partials/headerContact') %>
 
-<div class="home-wrapper">
-  <section class="contactglass">
-    <h2 class="section-title">Thank You, <%= userMessage.name %>!</h2>
-    <p class="subtitle">We’ve received your message:</p>
+    <!-- A post that pops up a thank you screen -->
+    <div class="home-wrapper">
+        <section class="contactglass">
+            <h2 class="section-title">Thank You,
+                <%= userMessage.name %>!</h2>
+            <p class="subtitle">We’ve received your message:</p>
 
-    <div class="contact-summary">
-      <p><strong>Email:</strong> <%= userMessage.email %></p>
-      <p><strong>Message:</strong></p>
-      <blockquote><%= userMessage.message %></blockquote>
+            <div class="contact-summary">
+                <p><strong>Email:</strong>
+                    <%= userMessage.email %>
+                </p>
+                <p><strong>Message:</strong></p>
+                <blockquote>
+                    <%= userMessage.message %>
+                </blockquote>
+            </div>
+
+            <a href="/" class="button-link">Return to Home</a>
+        </section>
     </div>
 
-    <a href="/" class="button-link">Return to Home</a>
-  </section>
-</div>
-
-<%- include('../partials/footer') %>
-
+    <%- include('../partials/footer') %>

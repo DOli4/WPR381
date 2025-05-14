@@ -1,27 +1,27 @@
 <%- include('../partials/headerAbout') %>
-<link rel="stylesheet" href="/css/style.css">
-<div class="home-wrapper">
+    <link rel="stylesheet" href="/css/style.css">
+    <div class="home-wrapper">
 
-<!-- ABOUT SECTION -->
- 
-  <section class="aboutglass">
-    <h1 class="main-title">About Our Team</h1>
-    <p class="subtitle">Meet the passionate people behind this portal.</p>
+        <!-- ABOUT SECTION -->
 
-    <ul class="team-list">
-      <% if (team && team.length) { %>
-        <% team.forEach(member => { %>
-          <li>
-            <strong><%= member.name %></strong>
-            <span class="role">– <%= member.role %></span>
-          </li>
-        <% }) %>
-      <% } else { %>
-        <li>No team data available.</li>
-      <% } %>
-    </ul>
-  </section>
-</div>
+        <section class="aboutglass">
+            <h1 class="main-title">About Our Team</h1>
+            <p class="subtitle">Meet the passionate people behind this portal.</p>
 
-<%- include('../partials/footer') %>
+            <!-- Create the list of team members taken from from the route file -->
+            <ul class="team-list">
+                <% if (team && team.length) { %>
+                    <% team.forEach(member => { %>
+                        <li>
+                            <strong><%= member.name %></strong>
+                            <span class="role">– <%= member.role %></span>
+                        </li>
+                        <% }) %>
+                            <% } else { %>
+                                <li>No team data available.</li>
+                                <% } %>
+            </ul>
+        </section>
+    </div>
 
+    <%- include('../partials/footer') %>
